@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: rgb(241, 232, 232);
+}
+
 h1,
 h2,
 h3 {
@@ -17,15 +21,13 @@ h1 {
   font-size: 4em;
 }
 
+h2 {
+  color: brown;
+}
+
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a h3:hover {
-  font-size: 1.1em;
-  color: brown;
-  transition: 0.8s;
 }
 
 img {
@@ -34,13 +36,13 @@ img {
 
 /* Header */
 
-header{
+header {
   height: 100vh;
   background-image: url(../assets/images/header-background.jpg);
   background-size: cover;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,16 +50,16 @@ nav{
   background-color: brown;
 }
 
-.logoHeader{
+.logoHeader {
   width: 200px;
 }
 
-ul{
+ul {
   display: flex;
   align-items: center;
 }
 
-ul li{
+ul li {
   list-style-type: none;
   margin: 10px;
 }
@@ -68,19 +70,19 @@ ul li{
   top: 200px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 20px; 
+  padding: 20px;
 }
 
 i {
   font-size: 1em;
 }
 
-i.iconoLogueo{
+i.iconoLogueo {
   font-size: 2em;
   margin: 0 10px;
 }
 
-.welcome{
+.welcome {
   width: 40%;
   margin: 0 auto;
   text-align: center;
@@ -88,62 +90,119 @@ i.iconoLogueo{
 
 /* Acerca de mí */
 
-.descripcion{
+.descripcion {
   position: relative;
 }
 
-.fotoPerfil{
+.fotoPerfil {
   width: 200px;
   border-radius: 50%;
+  border: 3px solid brown;
   position: absolute;
   top: -200px;
   left: 20px;
 }
 
-.descripcion__info{
+.descripcion__info {
   margin: 100px 20px 20px 20px;
 }
 
-.aboutMe{
-  margin: 20px;
+.aboutMe {
+  margin: 50px 20px;
 }
 
-.aboutMe__child{
+.aboutMe__child {
   display: flex;
 }
+
+.location {
+  font-size: .9em;
+}
+
 
 /* Experiencia */
 
-.experiencia{
+.experiencia {
   margin: 20px;
+  padding: 20px;
+  border: 2px solid brown;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
-.experiencia__barraTitulo{
+.experiencia__barraTitulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 0;
+}
+
+.experiencia__child {
+  display: flex;
   margin: 30px 0;
 }
 
-.experiencia__child{
-  display: flex;
-  margin: 20px 0;
-}
-
-.experiencia img{
+.experiencia img {
   width: 100px;
   object-fit: contain;
   max-height: 100px;
 }
 
-.descripcionPuesto{
+.descripcionPuesto {
   margin: 0 20px;
 }
 
-.iconosEdicion{
-  display: flex;
+.descripcionPuesto__info{
+  display: inline;
+  margin-right: 20px;
 }
 
-.iconosEdicion i{
+.iconosEdicion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.iconosEdicion i {
   margin: 10px 5px;
 }
+
+
+/* Skills */
+
+.skills{
+  margin: 30px 0;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+.skills__child {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: #04AA6D;
+}
+
+
+.css {
+  width: 80%;
+  background-color: #2196F3;
+}
+
+
+.js {
+  width: 50%;
+  background-color: #f44336;
+}
+
+

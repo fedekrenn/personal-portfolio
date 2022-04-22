@@ -43,7 +43,7 @@
                 <div class="descripcion__info">
                     <h2>Federico Krenn</h2>
                     <h3>Fullstack Developer Jr.</h3>
-                    <h3>Córdoba, Argentina - <a href="#contact">Información de contacto</a></h3>
+                    <h3 class="location">Córdoba, Argentina</h3>
                 </div>
             </div>
             <div class="aboutMe">
@@ -68,8 +68,13 @@
                 <img src="./assets/images/experiencia/startek.png" alt="Empresa Startek">
                 <div class="descripcionPuesto">
                     <h3>Analista de calidad</h3>
-                    <h4>Startek</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit reprehenderit vel iure accusamus ea ipsa fuga. Dolores mollitia vero nisi tempore voluptas officia temporibus molestiae! Deleniti reprehenderit laudantium, reiciendis optio hic officia voluptatibus esse non quibusdam? Optio nostrum consequatur magnam officia quam veritatis facere adipisci nemo corporis? Facere, eaque.</p>
+                    <h4 class="descripcionPuesto__info">Startek</h4>
+                    <h5 class="descripcionPuesto__info">2013 - actualidad</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit reprehenderit vel iure
+                        accusamus ea ipsa fuga. Dolores mollitia vero nisi tempore voluptas officia temporibus
+                        molestiae! Deleniti reprehenderit laudantium, reiciendis optio hic officia voluptatibus esse non
+                        quibusdam? Optio nostrum consequatur magnam officia quam veritatis facere adipisci nemo
+                        corporis? Facere, eaque.</p>
                 </div>
                 <div class="iconosEdicion">
                     <i class="fa-solid fa-pen"></i>
@@ -88,7 +93,8 @@
                 <div class="descripcionPuesto">
                     <h3>Argentina Programa</h3>
                     <h4>Desarrollador Web Fullstack</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit reprehenderit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit reprehenderit Lorem ipsum
+                        dolor sit amet consectetur, adipisicing elit. Nesciunt, sint!</p>
                 </div>
                 <div class="iconosEdicion">
                     <i class="fa-solid fa-pen"></i>
@@ -100,7 +106,8 @@
                 <div class="descripcionPuesto">
                     <h3>Coderhouse</h3>
                     <h4>Desarrollador Web Fullstack</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit reprehenderit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odit reprehenderit Lorem ipsum
+                        dolor sit amet consectetur, adipisicing elit. Nesciunt, sint!</p>
                 </div>
                 <div class="iconosEdicion">
                     <i class="fa-solid fa-pen"></i>
@@ -108,9 +115,75 @@
                 </div>
             </div>
         </section>
-        
-    <!-- Iconos -->
-    <script src="https://kit.fontawesome.com/94c0117dd6.js" crossorigin="anonymous"></script>
+        <section class="experiencia">
+            <div class="experiencia__barraTitulo">
+                <h2>Hard y soft skills</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="skills">
+                <div class="iconosEdicion">
+                    <h3>Html</h3>
+                    <div>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skills__child html">90%</div>
+                </div>
+                <div class="iconosEdicion">
+                    <h3>Css</h3>
+                    <div>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skills__child css">80%</div>
+                </div>
+                <div class="iconosEdicion">
+                    <h3>Javascript</h3>
+                    <div>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skills__child js">50%</div>
+                </div>
+            </div>
+        </section>
+        <section class="experiencia">
+            <div class="experiencia__barraTitulo">
+                <h2>Proyectos</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="experiencia__child">
+                <img src="./assets/images/proyectos/cocinando-facil.JPG" alt="Cocinando fácil, web de recetas">
+                <div class="descripcionPuesto">
+                    <h3><a href="https://fedekrenn.github.io/proyectoJS/">Cocinando Fácil | Web para gestión de recetas y obtener ideas</a></h3>
+                    <p>Proyecto final de cursada Javascript en Coderhouse. El mismo es un simulador de cocina que permite cargar recetas, compararlas, filtrar por comidas rápidas y aquellas que son aptas para veganos. Además cuenta con conexión a una API que permite ingresar un ingrediente y la web automáticamente te devuelve recetas que podés cocinar con dicho ingrediente. Como añadido tiene función modo oscuro. Las recetas guardadas son almacenadas en el localStorage para tenerlas disponibles en una próxima sesión de navegación. Tecnologías utilizadas: Html, Css, Javascript. </p>
+                </div>
+                <div class="iconosEdicion">
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="experiencia__child">
+                <img src="./assets/images/proyectos/sereno-bienestar.JPG" alt="Sereno Bienestar logo">
+                <div class="descripcionPuesto">
+                    <h3><a href="https://fedekrenn.github.io/serenoBienestar/">Sereno Bienestar - Un lugar para encontrarte contigo mismo</a></h3>
+                    <p>Proyecto final de cursada de Desarrollo Web en Coderhouse. Es una web de 5 páginas maquetada con flexbox en mayor medida y grid. Además se usa framework de bootstrap e incluye el pre-procesador de Sass. Cuenta con librería de animaciones y está optimizada para SEO y a la vez es responsive, se puede visualizar cómodamente el contenido tanto en mobile, tablets o desktop.</p>
+                </div>
+                <div class="iconosEdicion">
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Iconos -->
+        <script src="https://kit.fontawesome.com/94c0117dd6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
