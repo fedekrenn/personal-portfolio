@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: rgb(241, 232, 232);
+  background: rgb(243,254,245);
+  background: linear-gradient(90deg, rgba(243,254,245,1) 0%, rgba(230,230,242,1) 26%, rgba(243,254,245,1) 100%);
 }
 
 h1,
@@ -22,12 +23,17 @@ h1 {
 }
 
 h2 {
-  color: brown;
+  color: #a52a2a;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  transition: .5s;
+}
+
+main a:hover{
+  color: brown;
 }
 
 img {
@@ -37,7 +43,7 @@ img {
 /* Header */
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../assets/images/header-background.jpg);
   background-size: cover;
 }
@@ -62,10 +68,17 @@ ul {
 ul li {
   list-style-type: none;
   margin: 10px;
+  transition: .4s;
+}
+
+ul li:hover{
+  transform: scale(1.2);
 }
 
 .welcome {
-  margin-top: 10vh;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
   position: relative;
   top: 200px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -75,6 +88,7 @@ ul li {
 
 i {
   font-size: 1em;
+  transition: .4s;
 }
 
 i.iconoLogueo {
@@ -82,10 +96,9 @@ i.iconoLogueo {
   margin: 0 10px;
 }
 
-.welcome {
-  width: 40%;
-  margin: 0 auto;
-  text-align: center;
+main i:hover{
+  color: brown;
+  transform: scale(1.2);
 }
 
 /* Acerca de mí */
@@ -97,7 +110,6 @@ i.iconoLogueo {
 .fotoPerfil {
   width: 200px;
   border-radius: 50%;
-  border: 3px solid brown;
   position: absolute;
   top: -200px;
   left: 20px;
@@ -109,11 +121,10 @@ i.iconoLogueo {
 
 .aboutMe {
   margin: 50px 20px;
-}
-
-.aboutMe__child {
   display: flex;
 }
+
+
 
 .location {
   font-size: .9em;
@@ -122,28 +133,28 @@ i.iconoLogueo {
 
 /* Experiencia */
 
-.experiencia {
+.contenedor {
   margin: 20px;
   padding: 20px;
-  border: 2px solid brown;
+  border: 2px solid black;
   border-radius: 20px;
-  background-color: white;
+  background-color: #ffffff80;
   box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
-.experiencia__barraTitulo {
+.contenedor__barraTitulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
 }
 
-.experiencia__child {
+.contenedor__child {
   display: flex;
   margin: 30px 0;
 }
 
-.experiencia img {
+.contenedor img {
   width: 100px;
   object-fit: contain;
   max-height: 100px;
@@ -153,7 +164,7 @@ i.iconoLogueo {
   margin: 0 20px;
 }
 
-.descripcionPuesto__info{
+.descripcionPuesto__info {
   display: inline;
   margin-right: 20px;
 }
@@ -166,12 +177,13 @@ i.iconoLogueo {
 
 .iconosEdicion i {
   margin: 10px 5px;
+  align-self: flex-start;
 }
 
 
 /* Skills */
 
-.skills{
+.skills {
   margin: 30px 0;
 }
 
@@ -205,4 +217,68 @@ i.iconoLogueo {
   background-color: #f44336;
 }
 
+/* Responsive */
 
+@media (max-width: 750px) {
+
+  .fotoPerfil{
+    width: 150px;
+    top: -175px;
+  }
+
+  nav ul li a span{
+    display: none;
+  }
+
+  .welcome{
+    width: 60%;
+    font-size: .5em;
+  }
+
+  .aboutMe__child p{
+    text-align: justify;
+  }
+
+  .contenedor__child{
+    flex-direction: column;
+    align-items: center
+  }
+
+  .contenedor__child img{
+    width: 150px;
+    margin: 20px;
+  }
+
+  .iconosEdicion{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px){
+  header{
+    min-height: 70vh;
+  }
+
+  .welcome{
+    top: 125px;
+  }
+  
+  .fotoPerfil{
+    width: 100px;
+    top: -150px;
+  }
+  
+  .logoHeader{
+    display: none;
+  }
+
+  nav{
+    justify-content: center;
+  }
+
+  .iconoLogueo{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+}
