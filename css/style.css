@@ -235,6 +235,10 @@ main i:hover{
     font-size: .5em;
   }
 
+  h2{
+    font-size: 1.6em;
+  }
+
   .aboutMe__child p{
     text-align: justify;
   }
@@ -259,6 +263,10 @@ main i:hover{
     min-height: 70vh;
   }
 
+  h1{
+    font-size: 2em;;
+  }
+
   .welcome{
     top: 125px;
   }
@@ -281,4 +289,5 @@ main i:hover{
     top: 15px;
     right: 10px;
   }
+
 }
